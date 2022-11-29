@@ -2,6 +2,16 @@
 
 Starter template for [Docus](https://docus.dev).
 
+## Docker Dev
+```bash
+git clone git@github.com:rekryt/docus-docker.git docus-docker
+cd docus-docker
+cp .env.example .env
+# nano .env # set NUXT_WS_PROXY_HOST with docker-host ip
+docker-compose -f docker-compose.dev.yml build
+docker-compose -f docker-compose.dev.yml up -d
+```
+
 ## Clone
 
 Clone the repository (using `nuxi`):
